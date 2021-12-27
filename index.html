@@ -25,12 +25,49 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="firstpage">
-            <div class="Hfirst"><h1>Глобальный вайп на сервере Origma</h1></div>
-      <div class="line"><hr></div>
-              <div class="FirstInfo"><p>На нашем сервере стартует новый сезон!<br> Точная дата начала 4 сезоная Origma пока не известна<br> Остается лишь ожидать ближайших новостей </p>
-      <div class="WelcomeImage"><img class="WelcomeImage" src="images/WelcomeImage.png"></div>   
+            <h1>Origma</h1>
+            <div class="line">
+              <hr>
             </div>
+            <div class="FirstInfo">
+              <p>Приватный сервер, <br> где игроки воссоединяются,<br> для воплощения своих идей,<br> и все это в
+                выживании!</p>
+            </div>
+
+          </div>
+          <div class="WelcomeImage"><img class="WelcomeImage" src="images/WelcomeImage.png"></div>
         </div>
+        <div class="swiper-slide">
+          <div class="secondpage">
+            <h1>О проекте</h1>
+            <div class="line">
+              <hr>
+            </div>
+            <div class="SecondInfo">
+              <p>Игроки сами придумывают<br> и восаздают свои идеи, <br> по которым ВЫ сможете пройти!<br> Замки, города
+                и многое другое! <br> Торгуй, общайся и обьединяся с другими игроками!</p>
+            </div>
+
+          </div>
+          <div class="WelcomeImage2"><img class="WelcomeImage2" src="images/welcomeImage2.png"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="secondpage">
+            <h1>42632 игроков</h1>
+            <div class="line">
+              <hr>
+            </div>
+            <div class="ThirdInfo">
+              <p>На нашем сервере уже получают позитивные <br> эмцоии. Не упусти свой шанс</p>
+            </div>
+
+          </div>
+          <div class="WelcomeImage3"><img class="WelcomeImage3" src="images/Players.png"></div>
+          </div>
+        <div class="swiper-slide">
+            <div class="PressButton"><p>Жми кнопку</p></div>
+            <a class="ButtonPlay" href="StartGamePay.html">Начать</a>
+            <div class="WelcomeImage"><img class="WelcomeImage5" src="images/WelcomeImage.png"></div>
           </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -67,30 +104,27 @@
 </html>
 
 <style>
-    .Hfirst {
-
-               padding-top: 5%;
-font-family: "OrigmaFont"; 
-                font-size: 30px;
-                text-align: center;
-            
-            }
-            .line{
-               width: 300px;
-            padding-left: 615px;
-            
-            }
-            .FirstInfo {
-font-family: "OrigmaFont"; 
-                font-size: 30px;
-                text-align: center;
-
-            }
-            .WelcomeImage {
-                padding-left: 1000px;
-                padding-top: 10px;
-                float: right;
-            }
+    .ButtonPlay{
+        font-family: "OrigmaFont";
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        background-color: gray;
+    border: 6px solid gray;
+    border-radius: 25px;
+        font-size: 45px;
+        margin-block-start: 3.5em;
+        margin-right: 30%;
+        
+        
+    }
+    .PressButton {
+        text-decoration: none;
+        font-family: "OrigmaFont";
+        position: absolute;
+        margin-right: 30%;
+        font-size: 60px;
+    }
   html,
   body {
     position: relative;
@@ -99,7 +133,7 @@ font-family: "OrigmaFont";
 
   body {
     background-image: url(images/background.jpg);
-    font-family: "OrigmaFont";
+    font-family: "OrigmaFont";  
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -152,7 +186,7 @@ font-family: "OrigmaFont";
     padding-left: 180px;
     /* Убираем поля по умолчанию */
     white-space: nowrap;
-    font-family: monospace;
+    font-family: "OrigmaFont";
     text-decoration: none;
 
   }
@@ -168,7 +202,6 @@ font-family: "OrigmaFont";
   .link2 {
     padding-left: 300px;
     text-decoration: none;
-      text-decoration: overline;    
 
   }
 
@@ -290,20 +323,29 @@ font-family: "OrigmaFont";
     padding-left: 10%;
   }
 
-  .WelcomeImage2 {
+  .WelcomeImage3 {
+      margin-left: 15%;
+    }
+.WelcomeImage2 {
     width: 960px;
-    height: 525px;
+    height: 200px;
     margin-left: 20%;
     position: absolute;
   }
-
-  .FirstInfo {
-    font-weight: 800;
-
+    .WelcomeImage5 {
+    margin-left: 40%;
   }
 
+  .FirstInfo {
+    font-family: "OrigmaFont";
+  }
+    .ThirdInfo {
+    font-family: "OrigmaFont";
+    margin-right: 10%;
+  }
+
+
   .SecondInfo {
-    font-weight: 800;
     margin-block-start: -1.5em;
     text-align: center;
     padding-top: 5%;
@@ -311,7 +353,7 @@ font-family: "OrigmaFont";
 
   .firstpage {
     font-size: 36px;
-    font-family: "OrigmaFont";
+    font-family: monospace;
   }
 
   h2 {
@@ -322,6 +364,7 @@ font-family: "OrigmaFont";
 
   h1 {
     color: #696969;
+    font-family: "OrigmaFont";
 
   }
 
