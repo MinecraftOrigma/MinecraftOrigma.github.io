@@ -1,0 +1,539 @@
+<html>
+    <div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+        <div class="SupportHead"><h1>Поддержите проект Origma</h1></div>
+        <div class="SupportText"><p>Так-же при поддержке проекта, вы получите специальные приставки на нашем сервере дискорд</p></div>
+        <div class="DonationImage"><img class="DonationImage" src="images/Donat.png"></div>
+        <a class="NewWin" href="StartGame.html">Просто продолжить</a>
+        <a class="SupportLink" href="https://www.donationalerts.com/r/origma">Поддержать</a>
+    </div>
+    </div>
+    <div id="layer2" class="Header">
+    <head>
+        <title>Origmа</title>
+        <link rel="shortcut icon" href="images/logo.ico" />
+        
+        <div class="header-links">
+            <div class="logo"><a href="Index.html"><img height="85px" src="images/logo.png"></a></div>
+            <div class="link1"><a class="Starttext" href="Contacts.html">КОНТАКТЫ</a></div>
+            <div class="link2"><a class="Starttext" href="news.html">НОВОСТИ</a></div>
+            <div class="link3"><a class="Starttext" href="gallery.html">ГАЛЕРЕЯ</a></div>
+            <div class="start"><a class="Startplay" href="">НАЧАТЬ ИГРУ</a></div>
+        </div>  
+
+    </head>
+    </div>
+
+<body>
+    
+
+
+  <div id="layer2" class="Mymain">
+      <div class="Hfirst"><a class="StartGameButton" href="javascript:PopUpShow()"><h1>Начать игру</h1></a></div>
+      <div class="FirstInfo"></div>
+      <div class="WelcomeImage"><img class="WelcomeImage" src="images/WelcomeImage.png"></div>   
+</div> 
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
+</body>
+    <footer>
+        <div class="Footer1"><p>origma.official@gmail.com</p></div>
+        <div class="Footer2"><img src="images/logo-banks.png"></div>
+        <div class="Footer3"><img  width="100" src="images/qrcode.png"></div>
+    </footer>
+</html>
+<style>
+    .SupportLink {
+        position: absolute;
+        text-align: left;
+        padding-top: 19%;
+        text-decoration: none;
+        color: black;
+        font-size: 28px;
+        margin-left: 12%;
+        font-weight: 800;
+    }
+    .SupportText{
+        position: absolute;
+        text-align: left;
+        padding-top: 16%;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin-left: 2%;
+    }
+    .DonationImage {
+        opacity: 1;
+        width: 500px;
+        position: absolute;
+        text-align: center;
+    }
+    .SupportHead {
+        padding-top: 1%;
+        text-align: center;
+    }
+    .NewWin {
+        position: absolute;
+        text-align: center;
+        padding-top: 19%;
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        padding-left: 27%;
+    }
+    .StartGameButton{
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        margin-left: 30%;
+    }
+    .b-container{
+    width:200px;
+    height:150px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+    color: #fff;
+}
+.b-popup{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    opacity: 1;
+ 
+}
+
+.b-popup .b-popup-content{
+    width: 50%;
+    height: 55%;
+    margin-top: 10%;
+    background-color: #A6A6A6;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    opacity: 1;
+    margin-left: 25%;
+}
+       #layer1, #layer2, #layer3, #layer4 {
+    position: relative; /* Относительное позиционирование */
+    }
+           
+    #popup1{ z-index: 2; }
+    #layer2 { z-index: 1; }
+
+
+    .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.78);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+    .block-popup{
+  position: absolute;
+  background: #fff;
+  width: 37%;
+  height: 135px;
+  margin-top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 12px 20px -10px;
+  text-align: center;
+  display: none;
+}
+.block-popup span{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+            html {
+                position:relative; 
+                min-height:100%;
+            }
+            .logo {
+                padding-left: 25px;
+                padding-top: 4px;
+            }
+            body{
+                background-image: url(images/background.jpg);
+     font-family: "OrigmaFont";
+                height: 100%;
+                min-width:900px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .Mymain {
+                background-color: #A6A6A6;
+                opacity: 0.8; /* Цвет фона */
+                width: 75%;
+                margin-left: 12%;
+                padding: 25px; /* Поля вокруг текста */
+                border-radius: 25px;
+                padding-bottom: 100px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            .Hfirst {
+
+               padding-top: 150px;
+    font-family: "OrigmaFont";
+                font-size: 30px;
+                text-align: left;
+                padding-left: 100px;
+            
+            }
+            .line{
+               width: 300px;
+            
+            padding-left: 100px;
+            }
+            .FirstInfo {
+    font-family: "OrigmaFont";
+                font-size: 30px;
+                text-align: left;
+                padding-left: 100px;
+
+            }
+            .WelcomeImage {
+                padding-left: 1000px;
+                padding-top: 10px;
+                float: right;
+            }
+           footer {
+                margin-top: -100px;
+  /*Минус Высота футера*/
+                height: 200px;
+  /*Высота футера*/
+               padding-top: 150px;
+               background-color: black;
+               color: white;
+    font-family: "OrigmaFont";
+               display: flex;
+               
+            }
+            .Footer1 {
+                padding-left: 150px;
+                font-size: 24px;
+            }
+            .Footer2 {
+                padding-left: 150px;
+            }
+            .Footer3 {
+                margin-left: 800px;
+            }
+              a {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+
+  a:hover {
+    color: gray;
+    transition: 1s ease all;
+  }
+
+  a {
+    transition: color 0.2 linear;
+  }
+
+            .Header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    font-family: "OrigmaFont";
+    font-size: 30px;
+    border-radius: 25px;
+  }
+
+  .link1 {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    font-family: "OrigmaFont";
+    text-decoration: none;
+
+  }
+
+  .link1:hover {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    text-decoration: none;
+
+  }
+
+  .link2 {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+  .link2:hover {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+  .link3 {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    text-decoration: none;
+
+  }
+
+  .link3:hover {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    text-decoration: none;
+
+  }
+
+  .start {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    border-radius: 25px;
+
+  }
+
+  .header-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 800;
+
+  }
+
+  .Starttext {
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+
+  }
+
+  .Startplay {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+  }
+
+  .Startplay:hover {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+
+  }
+      .Header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    font-family: "OrigmaFont";
+    font-size: 30px;
+    border-radius: 25px;
+  }
+
+  .link1 {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    font-family: "OrigmaFont";
+    text-decoration: none;
+
+  }
+
+  .link1:hover {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    text-decoration: none;
+
+  }
+
+  .link2 {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+  .link2:hover {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+
+
+  .link3:hover {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    text-decoration: none;
+
+  }
+
+  .start {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    border-radius: 25px;
+
+  }
+
+  .header-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 800;
+
+  }
+
+  .Starttext {
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+
+  }
+
+  .Startplay {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+  }
+
+  .Startplay:hover {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+
+  }
+      .Header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    font-family: "OrigmaFont";
+    font-size: 30px;
+    border-radius: 25px;
+  }
+
+  .link1 {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    font-family: "OrigmaFont";
+    text-decoration: none;
+
+  }
+
+  .link1:hover {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    text-decoration: none;
+
+  }
+
+  .link2 {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+  .link2:hover {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+  .link3 {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    text-decoration: none;
+
+  }
+
+  .link3:hover {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    text-decoration: none;
+
+  }
+
+  .start {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    border-radius: 25px;
+
+  }
+
+  .header-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 800;
+
+  }
+
+  .Starttext {
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+
+  }
+
+  .Startplay {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+  }
+
+  .Startplay:hover {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+
+  }
+    @font-face {
+font-family: "OrigmaFont"; 
+src: url("fonts/origmaFont.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+        </style>

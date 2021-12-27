@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="Header">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Origmа</title>
+    <link rel="shortcut icon" href="images/logo.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <div class="header-links">
+      <div class="logo"><a href="Index.html"><img height="85px" src="images/logo.png"></a></div>
+      <div class="link1"><a class="Starttext" href="">КОНТАКТЫ</a></div>
+      <div class="link2"><a class="Starttext" href="news.html">НОВОСТИ</a></div>
+      <div class="link3"><a class="Starttext" href="gallery.html">ГАЛЕРЕЯ</a></div>
+      <div class="start"><a class="Startplay" href="StartGamePay.html">НАЧАТЬ ИГРУ</a></div>
+    </div>
+  </head>
+</div>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="firstpage">
+            <div class="Zagolovok">
+                <p>Origma</p>
+              </div>
+            <div class="FirstInfo">
+              <p>Наш состав составляют молодые <br> и гениальные администраторы с большим опытом и стажем</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="secondpage">
+              <div class="Zagolovok">
+                  <p>Андрей Земцов</p>
+              </div>
+            <div class="line">
+              <hr>
+            </div>
+            <div class="SecondInfo">
+                <p>Главный администратор и владелец сервера. Занимается технической частью сервера и рекламированием сервера</p>
+            </div>
+
+          </div>
+          <div class="WelcomeImage2"><img class="WelcomeImage2" src="images/MainAdmin.png"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="Zagolovok2">
+                <p>Набор в администрацию</p>
+              </div>
+            <div class="ThirdInfo">
+              <p>На нашем сервере не хватает администрации для технической части сервера.<br> Если ты хочешь вступить в наши ряды - то пиши нам заявку <br> на нашу почту - origma.official@gmail.com </p>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+<footer>
+  <div class="Footer1">
+    <p>origma.official@gmail.com</p>
+  </div>
+  <div class="Footer2"><img src="images/logo-banks.png"></div>
+  <div class="Footer3"><img width="100" src="images/qrcode.png"></div>
+  <div class="Footer4">
+    <p>Copyright © 2021 ORIGMA. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>
+
+<style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background-image: url(images/background.jpg);
+    font-family: "OrigmaFont";
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 75%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background-color: #A6A6A6;
+    opacity: 0.8;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    font-family: "OrigmaFont";
+    font-size: 30px;
+    border-radius: 25px;
+  }
+
+  .link1 {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    font-family: "OrigmaFont";
+    text-decoration: none;
+    text-decoration: overline;
+
+  }
+
+  .link1:hover {
+    padding-left: 180px;
+    /* Убираем поля по умолчанию */
+    white-space: nowrap;
+    text-decoration: none;
+
+  }
+
+  .link2 {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+  .link2:hover {
+    padding-left: 300px;
+    text-decoration: none;
+
+  }
+
+  .link3 {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    text-decoration: none;
+
+  }
+
+  .link3:hover {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    text-decoration: none;
+
+  }
+
+  .start {
+    padding-left: 300px;
+    /* Убираем поля по умолчанию */
+    border-radius: 25px;
+
+  }
+
+  .header-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 800;
+
+  }
+
+  .Starttext {
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+
+  }
+
+  .Startplay {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+  }
+
+  .Startplay:hover {
+    color: black;
+    background-color: gray;
+    text-decoration: none;
+    border: 6px solid gray;
+    border-radius: 25px;
+
+  }
+
+  footer {
+    margin-top: -100px;
+    height: 200px;
+    padding-top: 150px;
+    background-color: black;
+    color: white;
+    font-family: "OrigmaFont";
+  }
+
+  .Footer1 {
+    padding-left: 150px;
+    padding-top: 2%;
+    font-size: 24px;
+    position: absolute;
+  }
+
+  .Footer2 {
+    padding-left: 150px;
+    position: absolute;
+  }
+
+  .Footer3 {
+    padding-left: 30%;
+    position: absolute;
+  }
+
+  .Footer4 {
+    padding-top: 7%;
+    margin-left: 40%;
+    position: absolute;
+    color: gray;
+    text-align: center;
+  }
+
+  a {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+
+  a:hover {
+    color: gray;
+    transition: 1s ease all;
+  }
+
+  a {
+    transition: color 0.2 linear;
+  }
+
+  .logo {
+    padding-left: 25px;
+    padding-top: 4px;
+  }
+
+  .WelcomeImage {
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .WelcomeImage2 {
+    width: 479px;
+    height: 640px;
+    margin-left: 30%;
+    position: absolute;
+  }
+
+  .FirstInfo {
+      font-size: 36px;
+  }
+
+  .SecondInfo {
+    margin-block-start: -1.5em;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .firstpage {
+    font-family: "OrigmaFont";
+  }
+
+  h2 {
+    margin-left: 50%;
+    color: #696969;
+
+  }
+
+  .Zagolovok {
+    color: #696969;
+    margin-right: 50%;
+    font-family: "OrigmaFont";
+    font-size: 80px;
+  }
+    .Zagolovok2 {
+    color: #696969;
+    margin-right: 18%;
+    font-family: "OrigmaFont";
+    font-size: 64px;
+    position: absolute;
+    margin-top: 0%;
+  }
+
+  .secondpage {
+    font-size: 24px;
+   font-family: "OrigmaFont";
+    margin-left: 10%;
+    margin-right: 50%;
+    position: absolute;
+  }
+    .ThirdInfo {
+    margin-top: 13%;
+    margin-left: 1%;
+    font-size: 28px;
+    }
+    @font-face {
+font-family: "OrigmaFont"; 
+src: url("fonts/origmaFont.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+</style>
